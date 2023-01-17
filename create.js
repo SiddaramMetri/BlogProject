@@ -12,7 +12,6 @@ createPostButton.onclick = () => {
   };
 
   if (title && imageLinkInput) {
-    // add post to localstorage
     let posts = JSON.parse(localStorage.getItem("posts"));
     if (posts === null) posts = [];
     posts.push(post);
@@ -20,6 +19,5 @@ createPostButton.onclick = () => {
     localStorage.setItem("posts", JSON.stringify(posts));
   }
 
-  // redirect to home page
   location.href = "./";
 };
