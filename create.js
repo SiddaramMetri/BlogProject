@@ -19,5 +19,5 @@ createPostButton.onclick = () => {
     localStorage.setItem("posts", JSON.stringify(posts));
   }
 
-  location.href = "./";
+  location.href = "./index.html";
 };
